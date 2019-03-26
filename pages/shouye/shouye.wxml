@@ -1,0 +1,99 @@
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../../images/icons/search.png"></image>
+          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right flex-item" bindtap="upper">
+          <image src="../../images/icons/lighting.png"></image>
+      </view>
+  </view>
+  <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+  <swiper-item><image src='../../images/1.jpg'></image></swiper-item>
+  <swiper-item><image src='../../images/2.jpg'></image></swiper-item>
+  <swiper-item><image src='../../images/3.png'></image></swiper-item>
+  </swiper>
+
+
+  <view class='zhuanlan-1'>
+    <view>
+      <image src='../../images/icons/daxue.png'></image>
+      <text>大一专栏</text>
+    </view>
+    <view>
+      <image src='../../images/icons/huodong.png'></image>
+      <text>活动信息</text>
+    </view>
+    <view>
+      <image src='../../images/icons/jingsai.png'></image>
+      <text>竞赛信息</text>
+    </view>
+    <view>
+      <image src='../../images/icons/jingyan.png'></image>
+      <text>经验分享</text>
+    </view>
+  </view>
+
+  <view class='zhuanlan-2'>
+    <view>
+      <image src='../../images/icons/jishu.png'></image>
+      <text>技术分享</text>
+    </view>
+    <view>
+      <image src='../../images/icons/mianshi.png'></image>
+      <text>面试经验</text>
+    </view>
+    <view>
+      <image src='../../images/icons/xinde.png'></image>
+      <text>心得分享</text>
+    </view>
+    <view>
+      <image src='../../images/icons/zhaopin.png'></image>
+      <text>招聘信息</text>
+    </view>
+
+  </view>
+
+  <view class='fenge'>
+  </view>
+
+  <block>
+        <view class="feed-item">
+            <view class="feed-source">
+                <a class="">
+                    <view class="avatar">
+                        <image src="../../images/test_touxiang.jpeg"></image>
+                    </view>
+                    <text>薇拉航线</text>
+                </a>
+                
+            </view>
+            <view class="feed-content">
+                <view class="question" qid="10" bindtap="bindQueTap">
+                    <a class="question-link">
+                        <text>如何研读论文 ——根据网上方法整理中</text>
+                    </a>
+                </view>
+                <view class="answer-body">
+                    <view bindtap="bindItemTap">
+                        <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
+                    </view>
+                    <view class="answer-actions" bindtap="bindItemTap">
+                        <view class="like dot">
+                            <a>112 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>18 评论 </a>
+                        </view>
+                        <view class="follow-it">
+                            <a></a>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+
+
+
+</scroll-view>

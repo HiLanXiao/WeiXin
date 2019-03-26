@@ -1,0 +1,26 @@
+{
+  "pages": ["pages/shouye/shouye", "pages/wode/wode"],
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/shouye/shouye",
+        "iconPath": "images/icons/shouye.png",
+        "selectedIconPath": "images/icons/shouyefill.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/wode/wode",
+        "iconPath": "images/icons/wode.png",
+        "selectedIconPath": "images/icons/wodefill.png"
+      }
+    ],
+    "backgroundColor": "#EBEBEB",
+    "selectedColor": "#000"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "全知"
+  }
+}

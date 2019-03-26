@@ -1,0 +1,60 @@
+
+<view class='UCenter-bg'>
+  <open-data type="userAvatarUrl" class='png' mode='widthFix'></open-data>
+  <open-data type="userNickName" lang="zh_CN" class='text-xl'></open-data>
+
+  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+</view>
+<view class='padding flex text-center text-grey bg-white shadow-warp'>
+  <view class='flex flex-sub flex-direction solid-right'>
+    <view class="text-xxl text-orange">{{visitTotal}}</view>
+    <view class="margin-top-sm">
+      <text class='icon-attentionfill'></text> 关注</view>
+  </view>
+  <view class='flex flex-sub flex-direction solid-right'>
+    <view class="text-xxl text-blue">{{starCount}}</view>
+    <view class="margin-top-sm">
+      <text class='icon-favorfill'></text> 粉丝</view>
+  </view>
+  <view class='flex flex-sub flex-direction'>
+    <view class="text-xxl text-green">{{forksCount}}</view>
+    <view class="margin-top-sm">
+      <text class='icon-fork'></text> 收藏内容</view>
+  </view>
+</view>
+
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+
+  <view class="cu-item arrow">
+    <navigator class='content' url='../about/about' hover-class='none'>
+      <image src='../../images/icons/gerenxinxi.png' class='png_1' mode='aspectFit'></image>
+      <text class='text-grey'>个人信息</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item arrow">
+    <navigator class='content' url='../about/about' hover-class='none'>
+      <image src='../../images/icons/xuexiao.png' class='png_1' mode='aspectFit'></image>
+      <text class='text-grey'>学校信息</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item arrow">
+    <navigator class='content' url='../about/about' hover-class='none'>
+      <image src='../../images/icons/wodetiezi.png' class='png_1' mode='aspectFit'></image>
+      <text class='text-grey'>已发表的贴子</text>
+    </navigator>
+  </view>
+
+  <view class="cu-item arrow">
+    <navigator class='content' url='../about/about' hover-class='none'>
+      <image src='../../images/icons/yijian.png' class='png_1' mode='aspectFit'></image>
+      <text class='text-grey'>意见反馈</text>
+    </navigator>
+  </view>
+
+  
+
+</view>
+
+<view class='cu-tabbar-height'></view>
