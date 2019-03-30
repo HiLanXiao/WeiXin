@@ -12,7 +12,7 @@
   <swiper-item><image src='../../images/1.jpg'></image></swiper-item>
   <swiper-item><image src='../../images/2.jpg'></image></swiper-item>
   <swiper-item><image src='../../images/3.png'></image></swiper-item>
-  </swiper>
+  </swiper>·
 
 
   <view class='zhuanlan-1'>
@@ -57,19 +57,18 @@
   <view class='fenge'>
   </view>
 
-  <block>
+  <view bindtap="bindItemTap">
         <view class="feed-item">
             <view class="feed-source">
-                <a class="">
+                
                     <view class="avatar">
                         <image src="../../images/test_touxiang.jpeg"></image>
                     </view>
                     <text>薇拉航线</text>
-                </a>
-                
+                    
             </view>
             <view class="feed-content">
-                <view class="question" qid="10" bindtap="bindQueTap">
+                <view class="question" qid="10">
                     <a class="question-link">
                         <text>如何研读论文 ——根据网上方法整理中</text>
                     </a>
@@ -78,7 +77,7 @@
                     <view bindtap="bindItemTap">
                         <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
                     </view>
-                    <view class="answer-actions" bindtap="bindItemTap">
+                    <view class="answer-actions">
                         <view class="like dot">
                             <a>112 赞同 </a>
                         </view>
@@ -92,7 +91,7 @@
                 </view>
             </view>
         </view>
-    </block>
+    </view>
 
 
 

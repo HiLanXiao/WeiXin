@@ -1,0 +1,51 @@
+.tztitle{
+  font-size: 38rpx;
+  font-weight: 600;
+  line-height: 48rpx;
+  padding: 20rpx;
+  width: auto;
+  height: auto;
+}
+
+.tx image{
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.tx{
+  position: relative;
+  padding: 20rpx;
+}
+
+
+.tx_1{
+  display: inline-block;
+}
+
+.tx_2{
+  display: inline-block;
+  position: absolute;
+  font-size: 30rpx;
+  font-weight: 500;
+  top: 35rpx;
+  color:rgb(88, 86, 86);
+}
+
+.tx_3{
+  display: inline-block;
+  position: relative;
+  font-size: 27rpx;
+  font-weight: 500;
+  bottom: 15rpx;
+  color:rgb(153, 150, 150);
+}
+
+.tx_4{
+  font-size: 27rpx;
+  font-weight: 400;
+  display: inline-block;
+  padding: 20rpx;
+  border:4rpx solid #e0e0e0;
+}
+
