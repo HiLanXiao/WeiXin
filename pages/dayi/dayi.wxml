@@ -1,0 +1,154 @@
+<view class="cu-bar bg-white search fixed" style='opacity:0.95;'>
+  <view class='search-form round'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-gradual-green shadow-blur round'>搜索</button>
+  </view>
+</view>
+
+<view bindtap="bindItemTap" class="container" style='margin-top:100rpx'>
+  <view class="feed-item">
+    <view class="feed-source">
+
+      <view class="avatar">
+        <image src="../../images/test_touxiang.jpeg"></image>
+      </view>
+      <text>薇拉航线</text>
+
+    </view>
+    <view class="feed-content">
+      <view class="question" qid="10">
+        <a class="question-link">
+          <text>如何研读论文 ——根据网上方法整理中</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <view bindtap="bindItemTap">
+          <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
+        </view>
+        <view class="answer-actions">
+          <view class="like dot">
+            <a>112 赞同 </a>
+          </view>
+          <view class="comments dot">
+            <a>18 评论 </a>
+          </view>
+          <view class="follow-it">
+            <a></a>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view bindtap="bindItemTap" class="container">
+  <view class="feed-item">
+    <view class="feed-source">
+
+      <view class="avatar">
+        <image src="../../images/test_touxiang.jpeg"></image>
+      </view>
+      <text>薇拉航线</text>
+
+    </view>
+    <view class="feed-content">
+      <view class="question" qid="10">
+        <a class="question-link">
+          <text>如何研读论文 ——根据网上方法整理中</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <view bindtap="bindItemTap">
+          <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
+        </view>
+        <view class="answer-actions">
+          <view class="like dot">
+            <a>112 赞同 </a>
+          </view>
+          <view class="comments dot">
+            <a>18 评论 </a>
+          </view>
+          <view class="follow-it">
+            <a></a>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view bindtap="bindItemTap" class="container" >
+  <view class="feed-item">
+    <view class="feed-source">
+
+      <view class="avatar">
+        <image src="../../images/test_touxiang.jpeg"></image>
+      </view>
+      <text>薇拉航线</text>
+
+    </view>
+    <view class="feed-content">
+      <view class="question" qid="10">
+        <a class="question-link">
+          <text>如何研读论文 ——根据网上方法整理中</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <view bindtap="bindItemTap">
+          <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
+        </view>
+        <view class="answer-actions">
+          <view class="like dot">
+            <a>112 赞同 </a>
+          </view>
+          <view class="comments dot">
+            <a>18 评论 </a>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view bindtap="bindItemTap" class="container" >
+  <view class="feed-item">
+    <view class="feed-source">
+
+      <view class="avatar">
+        <image src="../../images/test_touxiang.jpeg"></image>
+      </view>
+      <text>薇拉航线</text>
+
+    </view>
+    <view class="feed-content">
+      <view class="question" qid="10">
+        <a class="question-link">
+          <text>如何研读论文 ——根据网上方法整理中</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <view bindtap="bindItemTap">
+          <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
+        </view>
+        <view class="answer-actions">
+          <view class="like dot">
+            <a>112 赞同 </a>
+          </view>
+          <view class="comments dot">
+            <a>18 评论 </a>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="fatie">
+  <image src="../../images/icons/ft.png">
+    
+  </image>
+</view>

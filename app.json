@@ -1,12 +1,13 @@
 {
-  "pages": ["pages/tiezi/tiezi", "pages/shouye/shouye", "pages/wode/wode"],
+  "pages": ["pages/shouye/shouye", "pages/wode/wode", "pages/tiezi/tiezi", "pages/dayi/dayi"],
   "tabBar": {
     "list": [
       {
         "text": "首页",
         "pagePath": "pages/shouye/shouye",
         "iconPath": "images/icons/shouye.png",
-        "selectedIconPath": "images/icons/shouyefill.png"
+        "selectedIconPath": "images/icons/shouyefill.png",
+        "color": "#009933"
       },
       {
         "text": "我的",
@@ -15,8 +16,8 @@
         "selectedIconPath": "images/icons/wodefill.png"
       }
     ],
-    "backgroundColor": "#EBEBEB",
-    "selectedColor": "#000"
+    "backgroundColor": "1e8e8",
+    "selectedColor": "#666633"
   },
   "window": {
     "navigationBarBackgroundColor": "#00BFFF",

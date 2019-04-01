@@ -71,10 +71,7 @@
   position: relative;
   display: inline-block;
 }
-.container .feed-item .feed-source a{
-  display: inline-block;
-  height: 40rpx;
-}
+
 .container .feed-item .feed-source .avatar image{
   /*position: absolute;*/
   display: inline-block;
@@ -94,12 +91,7 @@
   color: #a0acac;
   font-size: 26rpx;
 }
-.container .feed-item .feed-source .item-more{
-  display: inline-block;
-  width: 40rpx;
-  height: 45rpx;
-  float: right;
-}
+
 .container .feed-item .feed-content{
   padding: 10rpx 0 0 0;
 }
@@ -131,5 +123,14 @@
   content: "•";
 }
 
-
+.fatie image{
+  position: fixed;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  bottom: 9%;
+  right: 5%;
+  z-index: 1;
+  opacity: 0.8;
+}
 

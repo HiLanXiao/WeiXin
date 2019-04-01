@@ -16,6 +16,9 @@
       </view>
     </view>
 
+    <view style='height:4rpx;background-color:#e0e0e0;'>
+    </view>
+
     <view>
       <text class="tx_4">
       别先读摘要，从导言部分入手
@@ -36,11 +39,28 @@
 “显著”和“不显著”在统计学上具有精确的含义。
 图表中有没有误差线？对一些类型的研究来说，没有标明置信区间可是个大漏洞。
 样本大小。研究对象有10个人，还是10000个人？对一些研究目标而言，10个样本足矣，但是对大多数研究来说，样本多多益善。
-
-
       </text>
     </view>
+<view style='margin-bottom: 120rpx'>
+</view>
 
+
+
+<view class="cu-bar tabbar bg-white" style='position:fixed;bottom:0rpx;width:750rpx;opacity:0.8;'>
+    <view class="action">
+      <view class='icon-cu-image'>
+        <image src='../../images/icons/dz.png'></image>
+      </view>
+      <view style='color:#666633'>点赞</view>
+    </view>
+    <view class="action">
+      <view class='icon-cu-image'>
+        <image src='../../images/icons/pinglun.png'></image>
+      </view>
+      <view style='color:#666633'>评论</view>
+    </view>
+    
+  </view>
 
 
 

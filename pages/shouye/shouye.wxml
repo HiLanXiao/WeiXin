@@ -1,55 +1,64 @@
-<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-  <view class="search flex-wrp">
-      <view class="search-left flex-item">
-          <image src="../../images/icons/search.png"></image>
-          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
-      </view>
-      <view class="search-right flex-item" bindtap="upper">
-          <image src="../../images/icons/lighting.png"></image>
-      </view>
+<view class="cu-bar bg-white search fixed" style='opacity:0.95;'>
+  <view class='search-form round'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
   </view>
-  <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+  <view class='action'>
+    <button class='cu-btn bg-gradual-green shadow-blur round'>搜索</button>
+  </view>
+</view>
+  
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000' style='margin-top:100rpx'>
   <swiper-item><image src='../../images/1.jpg'></image></swiper-item>
   <swiper-item><image src='../../images/2.jpg'></image></swiper-item>
   <swiper-item><image src='../../images/3.png'></image></swiper-item>
-  </swiper>·
+  </swiper>
 
 
   <view class='zhuanlan-1'>
     <view>
-      <image src='../../images/icons/daxue.png'></image>
-      <text>大一专栏</text>
+      <image src='../../images/icons/zhaopin.png'></image>
+      <text>招聘信息</text>
     </view>
-    <view>
-      <image src='../../images/icons/huodong.png'></image>
-      <text>活动信息</text>
-    </view>
-    <view>
-      <image src='../../images/icons/jingsai.png'></image>
-      <text>竞赛信息</text>
-    </view>
+    
     <view>
       <image src='../../images/icons/jingyan.png'></image>
       <text>经验分享</text>
     </view>
+
+    <view>
+      <image src='../../images/icons/jingsai.png'></image>
+      <text>竞赛信息</text>
+    </view>
+
+    <view>
+      <image src='../../images/icons/huodong.png'></image>
+      <text>活动信息</text>
+    </view>
+
   </view>
 
   <view class='zhuanlan-2'>
+
     <view>
       <image src='../../images/icons/jishu.png'></image>
       <text>技术分享</text>
     </view>
-    <view>
-      <image src='../../images/icons/mianshi.png'></image>
-      <text>面试经验</text>
+
+    <view bindtap="tz">
+      <image src='../../images/icons/daxue.png'></image>
+      <text>大一专栏</text>
     </view>
+
     <view>
       <image src='../../images/icons/xinde.png'></image>
       <text>心得分享</text>
     </view>
+    
     <view>
-      <image src='../../images/icons/zhaopin.png'></image>
-      <text>招聘信息</text>
+      <image src='../../images/icons/mianshi.png'></image>
+      <text>面试经验</text>
     </view>
 
   </view>
@@ -57,7 +66,7 @@
   <view class='fenge'>
   </view>
 
-  <view bindtap="bindItemTap">
+  <view bindtap="bindItemTap">`
         <view class="feed-item">
             <view class="feed-source">
                 
@@ -93,6 +102,10 @@
         </view>
     </view>
 
-
+<view class="fatie">
+  <image src="../../images/icons/ft.png">
+    
+  </image>
+</view>
 
 </scroll-view>

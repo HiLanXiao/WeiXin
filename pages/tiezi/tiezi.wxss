@@ -45,7 +45,28 @@
   font-size: 27rpx;
   font-weight: 400;
   display: inline-block;
-  padding: 20rpx;
-  border:4rpx solid #e0e0e0;
+  padding: 20rpx 20rpx 20rpx 20rpx;
 }
 
+.btm image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.btm{
+  font-size: 25rpx;
+  position: fixed;bottom: 0rpx;width: 750rpx;
+  background-color: f1e8e8;opacity: 0.8;
+}
+
+.btm .lf{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.btm .rt{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
