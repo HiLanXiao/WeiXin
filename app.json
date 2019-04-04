@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/shouye/shouye", "pages/wode/wode", "pages/tiezi/tiezi", "pages/dayi/dayi"],
+  "pages": ["pages/shouye/shouye", "pages/wode/wode", "pages/tiezi/tiezi", "pages/dayi/dayi", "pages/login/login"],
   "tabBar": {
     "list": [
       {
