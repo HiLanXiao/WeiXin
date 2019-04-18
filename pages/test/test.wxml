@@ -1,0 +1,38 @@
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+  <view class='more'>
+    <image src='../../images/icons/more_1.png' bindtap='more'></image>
+  </view>
+
+
+  <view class="modal" style="{{modalShowStyle}}">
+    <view class="dialog">
+
+        <view class="cu-form-group" bindtap='delete'>
+          <view class='title'>删除贴子</view>
+          
+        </view>
+
+        <view class="cu-form-group" bindtap='change'>
+          <view class='title'>修改贴子</view>
+          
+        </view>
+
+        <view class="cu-form-group" bindtap='cancel'>
+          <view class='title'>取消</view>
+          
+        </view>
+
+
+
+      
+
+    </view>
+  </view>
+
+
+
+
+
+
+</scroll-view>

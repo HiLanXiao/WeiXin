@@ -1,5 +1,20 @@
 {
-  "pages": ["pages/shouye/shouye", "pages/wode/wode", "pages/tiezi/tiezi", "pages/dayi/dayi", "pages/login/login"],
+  "pages": [
+    "pages/shouye/shouye", 
+    "pages/wode/wode", 
+    "pages/tiezi/tiezi",
+     "pages/authorize/authorize",
+     "pages/personalInfo/personalInfo",
+     "pages/schoolInfo/schoolInfo",
+     "pages/searchRes/searchRes",
+     "pages/yifabiao/yifabiao",
+     "pages/fatie/fatie",
+     "pages/biaoti/biaoti",
+     "pages/wodeck/wodeck",
+     "pages/bankuai/bankuai",
+     "pages/changeArticle/changeArticle",
+     "pages/test/test"
+     ],
   "tabBar": {
     "list": [
       {
@@ -18,6 +33,9 @@
     ],
     "backgroundColor": "1e8e8",
     "selectedColor": "#666633"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
   },
   "window": {
     "navigationBarBackgroundColor": "#00BFFF",

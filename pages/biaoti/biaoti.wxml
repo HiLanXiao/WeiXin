@@ -1,0 +1,28 @@
+<view class="modal" style="{{modalShowStyle}}">
+  <view class="dialog">
+
+
+    <form>
+
+      <view class="cu-form-group">
+        <view class='title'>输入标题</view>
+        <input placeholder="请输入贴子的标题" class='radius' name='input' value="{{title}}" bindinput="titleInput"></input>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='title'>版块选择</view>
+        <picker bindchange="PickerChange" value="{{bankuai}}" range="{{picker}}">
+          <view class="picker">
+            {{index?picker[index]:'请选择发布版块'}}
+          </view>
+        </picker>
+      </view>
+
+    </form>
+
+   
+      <view class='but' style="color:green;float:left;" bindtap="touchAddNew">确定</view>
+      <view class='but' bindtap="touchCancel">取消</view>
+
+  </view>
+</view>

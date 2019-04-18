@@ -1,1 +1,0 @@
-<button open-type='getUserInfo' bindgetuserinfo='getUserInfo' class="weui-btn" type="primary">点击授权</button>

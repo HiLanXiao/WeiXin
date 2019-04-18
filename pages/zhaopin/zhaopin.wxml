@@ -1,0 +1,53 @@
+<view class="cu-bar bg-white search fixed" style='opacity:0.95;'>
+  <view class='search-form round'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" bindblur='blurKey'></input>
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-gradual-green shadow-blur round' bindtap='Search'>搜索</button>
+  </view>
+</view>
+<view style='margin-top:100rpx'></view>
+<view wx:for="{{feed}}" wx:key='key'bindtap="bindItemTap" class="container">
+  <view class="feed-item">
+    <view class="feed-source">
+
+      <view class="avatar">
+        <image src="../../images/test_touxiang.jpeg"></image>
+      </view>
+      <text>{{item.name}}</text>
+
+    </view>
+    <view class="feed-content">
+      <view class="question" qid="10">
+        <a class="question-link">
+          <text>{{item.title}}</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <view bindtap="bindItemTap">
+          <text class="answer-txt" aid="3">{{item.summary}}</text>
+        </view>
+        <view class="answer-actions">
+          <view class="like dot">
+            <a>{{item.zan_count}} 赞同 </a>
+          </view>
+          <view class="comments dot">
+            <a>{{item.comment_count}} 评论 </a>
+          </view>
+          <view class="follow-it">
+            <a></a>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="fatie">
+  <image src="../../images/icons/ft.png">
+    
+  </image>
+</view>

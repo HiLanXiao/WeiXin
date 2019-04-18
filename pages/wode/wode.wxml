@@ -26,31 +26,31 @@
 <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
 
   <view class="cu-item arrow">
-    <navigator class='content' url='../about/about' hover-class='none'>
+    <navigator class='content' url='../personalInfo/personalInfo' hover-class='none'>
       <image src='../../images/icons/gerenxinxi.png' class='png_1' mode='aspectFit'></image>
       <text class='text-grey'>个人信息</text>
     </navigator>
   </view>
 
   <view class="cu-item arrow">
-    <navigator class='content' url='../about/about' hover-class='none'>
+    <navigator class='content' url='../schoolInfo/schoolInfo' hover-class='none'>
       <image src='../../images/icons/xuexiao.png' class='png_1' mode='aspectFit'></image>
       <text class='text-grey'>学校信息</text>
     </navigator>
   </view>
 
   <view class="cu-item arrow">
-    <navigator class='content' url='../about/about' hover-class='none'>
+    <navigator class='content' url='../yifabiao/yifabiao' hover-class='none'>
       <image src='../../images/icons/wodetiezi.png' class='png_1' mode='aspectFit'></image>
       <text class='text-grey'>已发表的贴子</text>
     </navigator>
   </view>
 
   <view class="cu-item arrow">
-    <navigator class='content' url='../about/about' hover-class='none'>
-      <image src='../../images/icons/yijian.png' class='png_1' mode='aspectFit'></image>
-      <text class='text-grey'>意见反馈</text>
-    </navigator>
+    <button class="cu-btn content" open-type="feedback">
+        <image src='../../images/icons/yijian.png' class='png_1' mode='aspectFit'></image>
+        <text class="text-grey">意见反馈</text>
+    </button>
   </view>
 
   

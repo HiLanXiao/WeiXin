@@ -1,0 +1,62 @@
+<view wx:for="{{feed}}" wx:key='key' id="{{item.id}}" bindtap="bindItemTap" class="container" catchlongpress="more">
+  <view class="feed-item">
+    <view class="feed-source">
+
+      <view class="avatar">
+        <image src="../../images/test_touxiang.jpeg"></image>
+      </view>
+
+      <text>{{item.name}}</text>
+      <!--<view class='more'>
+        <image src='../../images/icons/more_1.png' id="{{item.id}}" catchtap='more'></image>
+      </view>-->
+
+
+    </view>
+    <view class="feed-content">
+      <view class="question" qid="10">
+        <a class="question-link">
+          <text>{{item.title}}</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <view>
+          <text class="answer-txt" aid="3">{{item.summary}}</text>
+        </view>
+        <view class="answer-actions">
+          <view class="like dot">
+            <a>{{item.zan_count}} 赞同 </a>
+          </view>
+          <view class="comments dot">
+            <a>{{item.comment_count}} 评论 </a>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="modal" style="{{modalShowStyle}}">
+  <view class="dialog">
+
+    <view class="cu-form-group" bindtap='delete'>
+      <view class='title'>删除贴子</view>
+
+    </view>
+
+    <view class="cu-form-group" bindtap='change'>
+      <view class='title'>修改贴子</view>
+
+    </view>
+
+    <view class="cu-form-group" bindtap='cancel'>
+      <view class='title'>取消</view>
+
+    </view>
+
+
+
+
+
+  </view>
+</view>

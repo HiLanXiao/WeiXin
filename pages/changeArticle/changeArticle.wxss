@@ -1,0 +1,40 @@
+page{
+  background-color: white;
+}
+
+.titbar image{
+  height: 45rpx;
+  width: 45rpx;
+}
+
+.titbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10rpx; 
+  padding-bottom: 10rpx;
+  border-bottom: 4rpx solid #eaeaea; 
+  height: auto;
+
+}
+
+.cancel{
+  width: 10%;
+  height: auto;
+  left: 35rpx;
+}
+
+.fatie{
+  width: 10%;
+  height: auto;
+  right: 35rpx;
+}
+
+text{
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+textarea{
+  width: 100%,
+}

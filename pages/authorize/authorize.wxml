@@ -1,0 +1,15 @@
+<!--pages/authorize/authorize.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">按钮</view>
+</cu-custom>
+<view class="margin-xl padding-xl bg-white radius shadow-lg">
+  <text class='flex justify-center'>授权后，你将获得更多的权限</text>
+  <view class="flex justify-center">
+    <button  wx:if="{{canIUse}}"open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn bg-blue shadow'>点击授权       </button>
+    <view wx:else >请升级到微信最新版</view>
+  </view>
+</view>
+<view class="text-center margin-top">
+  <text class="text-grey text-xl">{{motto}}</text>
+</view>

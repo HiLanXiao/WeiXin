@@ -1,65 +1,48 @@
-<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
 
-<view class="tztitle">
-    <text>如何研读论文——根据网上方法整理中</text>
-</view>
-    <view class="tx">
-      <view class="tx_1">
-        <image src="../../images/test_touxiang.jpeg"></image>
-      </view>
-      
-      <view class="tx_2">
-        <text>薇拉航线</text>
-      </view>
-      <view class="tx_3">
-        <text>信软15级学姐</text>
-      </view>
+  <view class="tztitle">
+    <text>{{feed.title}}</text>
+  </view>
+  <view class="tx">
+    <view class="tx_1">
+      <image src="../../images/test_touxiang.jpeg"></image>
     </view>
 
-    <view style='height:4rpx;background-color:#e0e0e0;'>
+    <view class="tx_2">
+      <text>{{feed.name}}</text>
     </view>
+    <view class="tx_3">
+      <text>{{feed.shortintro}}</text>
+    </view>
+  </view>
 
-    <view>
-      <text class="tx_4">
-      别先读摘要，从导言部分入手
+  <view style='height:4rpx;background-color:#e0e0e0;'>
+  </view>
 
-      找出大问题（“这个领域正在设法解决什么问题”）。
-
-      以不超过5句话的篇幅总结背景。
-
-      找出具体问题。
-
-      弄清解决手段。
-
-      阅读方法部分。
-
-      为每一个实验画出一个图表，画出作者到底做了什么。里面要包含使你全面理解研究工作所需的所有细节。
-
-      写下一段或几段话，总结每个实验、每幅图解和每张表格的结果。先不要解读结果的意义，写下结果是什么就好。你往往会发现，结果被总结在图解和表格之中了，用心注意它们。你可能还需要查阅在线的补充信息才能发现部分结果。另外，还要注意：
-“显著”和“不显著”在统计学上具有精确的含义。
-图表中有没有误差线？对一些类型的研究来说，没有标明置信区间可是个大漏洞。
-样本大小。研究对象有10个人，还是10000个人？对一些研究目标而言，10个样本足矣，但是对大多数研究来说，样本多多益善。
+  <view style="background-color: white;">
+    <text class="tx_4">
+      {{feed.article}}
       </text>
-    </view>
-<view style='margin-bottom: 120rpx'>
-</view>
+  </view>
+  <view style='margin-bottom: 120rpx'>
+  </view>
 
 
 
-<view class="cu-bar tabbar bg-white" style='position:fixed;bottom:0rpx;width:750rpx;opacity:0.8;'>
-    <view class="action">
+  <view class="cu-bar tabbar bg-white" style='position:fixed;bottom:0rpx;width:750rpx;opacity:0.8;'>
+    <view class="action" catchtap="{{feed.sign ? 'thumbsUp': ''}}">
       <view class='icon-cu-image'>
-        <image src='../../images/icons/dz.png'></image>
+        <image src="../../images/icons/dz{{feed.sign? '':'fill'}}.png"></image>
       </view>
-      <view style='color:#666633'>点赞</view>
+      <view style='color:#666633'>{{feed.zan_count}}人点赞</view>
     </view>
     <view class="action">
       <view class='icon-cu-image'>
         <image src='../../images/icons/pinglun.png'></image>
       </view>
-      <view style='color:#666633'>评论</view>
+      <view style='color:#666633'>{{feed.comment_count}}条评论</view>
     </view>
-    
+
   </view>
 
 

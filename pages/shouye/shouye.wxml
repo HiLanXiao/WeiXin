@@ -1,38 +1,44 @@
 <view class="cu-bar bg-white search fixed" style='opacity:0.95;'>
   <view class='search-form round'>
     <text class="icon-search"></text>
-    <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" bindblur='blurKey'></input>
   </view>
   <view class='action'>
-    <button class='cu-btn bg-gradual-green shadow-blur round'>搜索</button>
+    <button class='cu-btn bg-gradual-green shadow-blur round' bindtap='Search'>搜索</button>
   </view>
 </view>
-  
-<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
   <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000' style='margin-top:100rpx'>
-  <swiper-item><image src='../../images/1.jpg'></image></swiper-item>
-  <swiper-item><image src='../../images/2.jpg'></image></swiper-item>
-  <swiper-item><image src='../../images/3.png'></image></swiper-item>
+    <swiper-item>
+      <image src='../../images/1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/3.png'></image>
+    </swiper-item>
   </swiper>
 
 
   <view class='zhuanlan-1'>
-    <view>
+    <view id="招聘信息" bindtap="jrbk">
       <image src='../../images/icons/zhaopin.png'></image>
       <text>招聘信息</text>
     </view>
-    
-    <view>
+
+    <view id="经验分享" bindtap="jrbk">
       <image src='../../images/icons/jingyan.png'></image>
       <text>经验分享</text>
     </view>
 
-    <view>
+    <view id="竞赛信息" bindtap="jrbk">
       <image src='../../images/icons/jingsai.png'></image>
       <text>竞赛信息</text>
     </view>
 
-    <view>
+    <view id="活动信息" bindtap="jrbk">
       <image src='../../images/icons/huodong.png'></image>
       <text>活动信息</text>
     </view>
@@ -41,22 +47,22 @@
 
   <view class='zhuanlan-2'>
 
-    <view>
+    <view id="技术分享" bindtap="jrbk">
       <image src='../../images/icons/jishu.png'></image>
       <text>技术分享</text>
     </view>
 
-    <view bindtap="tz">
+    <view id="大一专栏" bindtap="jrbk">
       <image src='../../images/icons/daxue.png'></image>
       <text>大一专栏</text>
     </view>
 
-    <view>
+    <view id="心得分享" bindtap="jrbk">
       <image src='../../images/icons/xinde.png'></image>
       <text>心得分享</text>
     </view>
-    
-    <view>
+
+    <view id="面试经验" bindtap="jrbk">
       <image src='../../images/icons/mianshi.png'></image>
       <text>面试经验</text>
     </view>
@@ -66,46 +72,48 @@
   <view class='fenge'>
   </view>
 
-  <view bindtap="bindItemTap">`
-        <view class="feed-item">
-            <view class="feed-source">
-                
-                    <view class="avatar">
-                        <image src="../../images/test_touxiang.jpeg"></image>
-                    </view>
-                    <text>薇拉航线</text>
-                    
-            </view>
-            <view class="feed-content">
-                <view class="question" qid="10">
-                    <a class="question-link">
-                        <text>如何研读论文 ——根据网上方法整理中</text>
-                    </a>
-                </view>
-                <view class="answer-body">
-                    <view bindtap="bindItemTap">
-                        <text class="answer-txt" aid="3">第一，别先读摘要，从导言部分入手。第二，找出大问题（“这个领域正在设法解决什么问题”）。第三，以不超过5句话的篇幅总结背景。第四，找出具体问题。第五，弄清解决手段。...</text>
-                    </view>
-                    <view class="answer-actions">
-                        <view class="like dot">
-                            <a>112 赞同 </a>
-                        </view>
-                        <view class="comments dot">
-                            <a>18 评论 </a>
-                        </view>
-                        <view class="follow-it">
-                            <a></a>
-                        </view>
-                    </view>
-                </view>
-            </view>
+  <view wx:for="{{feed}}" wx:key='key' id="{{item.id}}" bindtap="bindItemTap">
+    <view class="feed-item">
+      <view class="feed-source">
+        <!--"{{feed.headurl}}"-->
+        <view class="avatar">
+          <image src="../../images/test_touxiang.jpeg"> </image>
         </view>
-    </view>
+        <text>{{item.name}}</text>
 
-<view class="fatie">
-  <image src="../../images/icons/ft.png">
-    
-  </image>
-</view>
+      </view>
+      <view class="feed-content">
+        <view class="question" qid="10">
+          <a class="question-link">
+            <text>{{item.title}}</text>
+          </a>
+        </view>
+        <view class="answer-body">
+          <view>
+            <text class="answer-txt" aid="3">{{item.summary}}</text>
+          </view>
+          <view class="answer-actions">
+            <view class="like dot">
+              <a>{{item.zan_count}} 赞同 </a>
+            </view>
+            <view class="comments dot">
+              <a>{{item.comment_count}} 评论 </a>
+            </view>
+            <view class="follow-it">
+              <a></a>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="fatie" bindtap="ft">
+    <image src="../../images/icons/ft.png">
+
+    </image>
+  </view>
+
+
 
 </scroll-view>

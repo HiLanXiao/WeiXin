@@ -12,8 +12,8 @@ Page({
     if (!session_id) {
       wx.showToast({
         title: '正在登录',
-        icon: 'succes',
-        duration: 2000,
+        icon: 'loading',
+        duration: 1500,
         mask: true
       })
 

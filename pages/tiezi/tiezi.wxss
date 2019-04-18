@@ -5,6 +5,7 @@
   padding: 20rpx;
   width: auto;
   height: auto;
+  background-color: white;
 }
 
 .tx image{
@@ -16,6 +17,7 @@
 .tx{
   position: relative;
   padding: 20rpx;
+  background-color: white;
 }
 
 
@@ -70,3 +72,4 @@
   width: 50%;
   text-align: center;
 }
+

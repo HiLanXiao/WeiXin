@@ -1,0 +1,20 @@
+<view>
+  <view class='titbar'>
+
+
+    <image src="../../images/icons/cha.png" class='cancel'></image>
+
+
+    <view class='x'>
+      <text>{{title}}</text>
+    </view>
+
+
+    <image src="{{fasong}}" class='fatie' bindtap='fasong'></image>
+
+
+  </view>
+  <view style='margin-top=25rpx;font-size: 30rpx'>
+    <textarea auto-height="true" placeholder="请输入贴子内容..." bindinput="textInput" bindchange="change" maxlength='100000'value='{{text}}'></textarea>
+  </view>
+</view>

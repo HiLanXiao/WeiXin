@@ -1,7 +1,14 @@
 //app.js
 App({
   onLaunch: function () {
-
+    wx.getSystemInfo({
+      success: e => {
+        this.globalData.StatusBar = e.statusBarHeight;
+        let custom = wx.getMenuButtonBoundingClientRect();
+        this.globalData.Custom = custom;
+        this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+      }
+    })
     // 登录
     wx.login({
       success: res => {
@@ -24,6 +31,12 @@ App({
                 this.userInfoReadyCallback(res)
               }
             }
+          })
+        }
+        else{
+          console.log('获取用户信息失败')
+          wx.navigateTo({
+            url: '../authorize/authorize',
           })
         }
       }
